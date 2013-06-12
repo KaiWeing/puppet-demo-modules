@@ -6,7 +6,7 @@ class apache::params {
       $configfile  = 'httpd.conf'
     }
     'Debian': {
-      $packagename = 'httpd'
+      $packagename = 'apache2'
       $servicename = 'apache2'
       $configfile  = 'apache2.conf'
     }

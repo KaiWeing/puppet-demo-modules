@@ -1,5 +1,7 @@
 class apache::service {
-  service { $apache::params::servicename:
+  service { "httpd":
+    name => $apache::params::servicename,
+    #name => 'httpd',
     ensure => running,
     hasstatus => true,
     hasrestart => true,

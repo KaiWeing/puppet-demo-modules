@@ -1,5 +1,6 @@
 class apache::install {
-  package { $apache::params::packagename:
+  package { "httpd":
+    name => $apache::params::packagename,
     ensure => present,
   }
 }
